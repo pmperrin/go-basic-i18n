@@ -1,9 +1,9 @@
 package go-simple-i18n
 
 import (
-    "fmt"
+    "fmt"	
 )
 
-func getText() {
+func GetText() {
     fmt.Println("Hello, 世界")
 }
