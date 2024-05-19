@@ -21,8 +21,9 @@ To get started with `go-basic-i18n`, ensure you have Go installed on your system
 Here's a basic example of how to use `go-basic-i18n` in your application:
     go package main
     
-    import ( "fmt"
-    basicI18n "github.com/pmperrin/go-basic-i18n/i18n"
+    import ( 
+        "fmt"
+        basicI18n "github.com/pmperrin/go-basic-i18n/i18n"
     )
 
     func main() { 
