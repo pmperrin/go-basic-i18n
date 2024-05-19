@@ -14,7 +14,8 @@ To get started with `go-basic-i18n`, ensure you have Go installed on your system
 
 1. Import the library into your Go project.
 2. Initialize the internationalization system with `InitI18n`.
-3. Retrieve localized messages using `GetLang` and `GetText` or `GetTextWithParam`.
+3. Select the current lang using `GetLang`
+4. Retrieve localized messages using `GetText` or `GetTextWithParam`.
 
 ## Usage
 
@@ -38,6 +39,13 @@ Here's a basic example of how to use `go-basic-i18n` in your application:
 
 
 Replace `"./path/to/language/files"` with the actual path to your language files, and `"fileName"` with the base name of your `.properties` files.
+
+
+## Example
+You found a simple example in `./example` or an example using getText in template file with Gin [https://github.com/pmperrin/go-basic-i18n-example](https://github.com/pmperrin/go-basic-i18n-example)
+
+
+
 
 ## Contributing
 
