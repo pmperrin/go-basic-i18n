@@ -19,22 +19,21 @@ To get started with `go-basic-i18n`, ensure you have Go installed on your system
 ## Usage
 
 Here's a basic example of how to use `go-basic-i18n` in your application:
-go package main
+    go package main
+    
+    import ( "fmt"
+    basicI18n "github.com/pmperrin/go-basic-i18n/i18n"
+    )
 
-import ( "fmt"
-
-basicI18n "github.com/pmperrin/go-basic-i18n/i18n"
-)
-
-func main() { 
-    i18nInstance, err := basicI18n.InitI18n("./path/to/language/files", "fileName", "en") 
-    if err!= nil { fmt.Println(err.Error()) return }
-
-    lang, err := i18nInstance.GetLang("es")
-    if err!= nil {fmt.Println(err.Error())return}
-
-    fmt.Println(lang.GetText("message.key"))
-}
+    func main() { 
+        i18nInstance, err := basicI18n.InitI18n("./path/to/language/files", "fileName", "en") 
+        if err!= nil { fmt.Println(err.Error()) return }
+    
+        lang, err := i18nInstance.GetLang("es")
+        if err!= nil {fmt.Println(err.Error())return}
+    
+        fmt.Println(lang.GetText("message.key"))
+    }
 
 
 Replace `"./path/to/language/files"` with the actual path to your language files, and `"fileName"` with the base name of your `.properties` files.
